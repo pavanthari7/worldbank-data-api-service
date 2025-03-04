@@ -9,6 +9,7 @@ This project fetches data for **195 recognized countries** using the **World Ban
 
 ## Project Structure
 
+#
 WebScrapping project/
 ├── Data/
 │   ├── countries_data.csv           # Created by fetch_data.py 
@@ -16,7 +17,7 @@ WebScrapping project/
 ├── main.py                          # FastAPI app
 ├── requirements.txt                 # Dependencies
 ├── challenge.md
-
+#
 
 
 ## Install Python dependencies
@@ -31,39 +32,39 @@ Run the following command in the terminal to fetch data for 195 countries and sa
 
 -  python fetch_data.py
 
-This will:
+# This will:
 
-Scrape country data from the World Bank API.
-Filter out non-countries (aggregates, territories, etc).
-Save the data to Data/countries_data.csv.
+# Scrape country data from the World Bank API.
+# Filter out non-countries (aggregates, territories, etc).
+# Save the data to Data/countries_data.csv.
 
 
 
 ## Run FastAPI Application
-Run the following command in the terminal to start the FastAPI server
+# Run the following command in the terminal to start the FastAPI server
 
 - python -m uvicorn main:app --reload
 
 
 ## API Documentation
-Swagger UI: http://localhost:8000/docs
-ReDoc: http://localhost:8000/redoc
+# Swagger UI: http://localhost:8000/docs
+# ReDoc: http://localhost:8000/redoc
 
 
 ## Visualizations
-You can view the following charts directly in your browser after running the FastAPI application:
+# You can view the following charts directly in your browser after running the FastAPI application:
 
-Visualization Endpoints
-Top 20 Countries by Population - http://localhost:8000/visualization/population
-Countries by Region	           - http://localhost:8000/visualization/region-distribution
-Countries by Income Level      - http://localhost:8000/visualization/income-levels
+# Visualization Endpoints
+# Top 20 Countries by Population - http://localhost:8000/visualization/population
+# Countries by Region	           - http://localhost:8000/visualization/region-distribution
+# Countries by Income Level      - http://localhost:8000/visualization/income-levels
 
 
 ## API Endpoints
-Method	Endpoint	                                  Description
-GET	    /	                                          Welcome message
-GET	    /country/{country_name}	                      Fetch data for a specific country
-GET	    /metadata	                                  Metadata (total countries, regions, income levels)
-GET	    /visualization/ population	                  Population chart (Top 20)
-GET	    /visualization/region-distribution	          Pie chart of countries by region
-GET	    /visualization/income-levels	              Bar chart of countries by income level
+# Method	Endpoint	                                  Description
+# GET	    /	                                          Welcome message
+# GET	    /country/{country_name}	                      Fetch data for a specific country
+# GET	    /metadata	                                  Metadata (total countries, regions, income levels)
+# GET	    /visualization/ population	                  Population chart (Top 20)
+# GET	    /visualization/region-distribution	          Pie chart of countries by region
+# GET	    /visualization/income-levels	              Bar chart of countries by income level
